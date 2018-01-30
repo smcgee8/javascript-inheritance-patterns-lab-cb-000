@@ -10,5 +10,5 @@ function Shape() {
   this.move = function(x,y) {
     this.position.x = x;
     this.position.y = y;
-  }
+  };
 }
