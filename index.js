@@ -18,6 +18,9 @@ Shape.prototype.move = function(x,y) {
   this.position.y = y;
 }
 
-function Circle() {
+function Circle(radius) {
   Shape.call(this)
+  this.radius = radius;
 }
+
+Circle.prototype = Object.create(Shape.prototype);
