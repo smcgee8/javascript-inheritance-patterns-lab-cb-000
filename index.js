@@ -37,3 +37,10 @@ Circle.prototype.circumference = function() {
 Circle.prototype.diameter = function() {
   return 2 * this.radius;
 }
+
+function Polygon() {
+  Shape.call(this);
+}
+
+Polygon.prototype = Object.create(Shape.prototype);
+Polygon.prototype.constructor = Circle;
