@@ -38,6 +38,8 @@ Circle.prototype.diameter = function() {
   return 2 * this.radius;
 }
 
+function Side() {}
+
 function Polygon(sides) {
   Shape.call(this);
   this.sides = sides;
