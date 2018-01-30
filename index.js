@@ -61,3 +61,10 @@ Polygon.prototype.perimeter = function() {
   });
   return sum;
 }
+
+function Quadrilateral(side1, side2, side3, side4) {
+  Polygon.call(this, [new Side(side1), new Side(side2), new Side(side3), new Side(side4)]);
+}
+
+Quadrilateral.prototype = Object.create(Polygon.prototype);
+Quadrilateral.prototype.constructor = Quadrilateral;
