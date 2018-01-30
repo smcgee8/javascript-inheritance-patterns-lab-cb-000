@@ -5,7 +5,7 @@ function Point(x,y) {
 
 function Shape() {
   this.addToPlane = function(x,y) {
-    this.position = new Point(x,y)
+    this.position = new Point(x,y);
   }
   this.move = function(x,y) {
     this.position.x = x;
