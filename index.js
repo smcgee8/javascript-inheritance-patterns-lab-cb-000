@@ -38,9 +38,11 @@ Circle.prototype.diameter = function() {
   return 2 * this.radius;
 }
 
-function Polygon() {
+function Polygon(sides) {
   Shape.call(this);
+  this.sides = sides;
 }
 
 Polygon.prototype = Object.create(Shape.prototype);
 Polygon.prototype.constructor = Circle;
+
