@@ -55,5 +55,9 @@ Polygon.prototype.numberOfSides = function() {
 }
 
 Polygon.prototype.perimeter = function() {
-
+  var sum = 0;
+  this.sides.forEach((element) => {
+    sum += element.length;
+  });
+  return sum;
 }
