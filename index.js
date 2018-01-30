@@ -44,5 +44,12 @@ function Polygon(sides) {
 }
 
 Polygon.prototype = Object.create(Shape.prototype);
-Polygon.prototype.constructor = Circle;
+Polygon.prototype.constructor = Polygon;
 
+Polygon.prototype.numberOfSides = function() {
+  return this.sides.length;
+}
+
+Polygon.prototype.perimeter = function() {
+
+}
