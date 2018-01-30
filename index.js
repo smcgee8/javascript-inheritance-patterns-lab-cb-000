@@ -38,7 +38,9 @@ Circle.prototype.diameter = function() {
   return 2 * this.radius;
 }
 
-function Side() {}
+function Side(length) {
+  this.length = length;
+}
 
 function Polygon(sides) {
   Shape.call(this);
