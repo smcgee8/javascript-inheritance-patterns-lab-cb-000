@@ -16,3 +16,7 @@ function Shape() {
     this.position.y = y;
   }
 }
+
+Shape.prototype.addToPlane = function(x,y) {
+  this.position = new Point(x,y)
+}
